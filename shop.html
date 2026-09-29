@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apothecary Shop &amp; Formulations • PRONOV</title>
+  <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+
+  <!-- ================= HEADER & NAVIGATION
+   <div class="top-banner">
+      <div class="container banner-content">
+        <p>Free shipping on orders above ₹999</p>
+        <p class="banner-sub">Made with thoughtfully selected natural ingredients</p>
+      </div>
+    </div> ================= -->
+  <header class="site-header">
+    <div class="top-bar">
+  <div class="top-bar-track">
+    <div class="top-bar-content">
+      <span>Free shipping on orders above ₹999</span>
+      <span class="top-bar-divider">•</span>
+      <span class="top-bar-subtext">Made with thoughtfully selected natural ingredients</span>
+      <span class="top-bar-divider">•</span>
+    </div>
+    <!-- Seamless Loop- -->
+    <div class="top-bar-content" aria-hidden="true">
+      <span>Free shipping on orders above ₹999</span>
+      <span class="top-bar-divider">•</span>
+      <span class="top-bar-subtext">Made with thoughtfully selected natural ingredients</span>
+      <span class="top-bar-divider">•</span>
+    </div>
+  </div>
+</div>
+
+    <nav class="navbar">
+      <div class="container nav-content">
+        <a href="index.html" class="brand-logo">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoyqO5-Xr4NJLfyYnroP157Fkp55Uklvlxb53XxxlZAIo_b-nxZBrJ1A5j-s2f4xnPjDH4KxytC8ccKILYUE-HUyUc3GuAHRZDrJl4OBO3JTNCtMJxvqjIrhn6elRZLS9n__NmslvPkD9XT0t8v7OcDrJIDqdJSJJ4XafP9yEh0bd5m7s5VBHOyLw-IbET-ThId08HnlibRgBFbKk9J-ypSo1LLCugFUWNHiNf-mmeBKZ2qbllx3M" alt="PRONOV Logo">
+          <strong>PRONOV</strong>
+        </a>
+
+        <!-- Navigation Links -->
+        <div class="nav-links" id="primary-nav">
+          <a href="index.html">Home</a>
+          <a href="shop.html" class="active" aria-current="page">Shop</a>
+          <a href="contact.html">Contact</a>
+          <a href="about.html">Our Story</a>
+        </div>
+
+        <div class="nav-actions">
+          <button class="icon-btn" aria-label="Search">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          </button>
+          
+          <a href="shop.html" class="icon-btn cart-btn" aria-label="Shopping Bag">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+            <small class="cart-count">(0)</small>
+          </a>
+          
+          <button class="user-avatar" aria-label="Account">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          </button>
+
+          <!-- Mobile Hamburger Button -->
+          <button type="button" class="icon-btn hamburger-btn" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ================= 01. SHOP HERO & CATEGORIES ================= -->
+    <section class="shop-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="sep">/</span>
+          <p>Apothecary Shop &amp; Formulations</p>
+        </nav>
+
+        <div class="hero-text-block">
+          <p class="section-tag">Small-Batch Botanical Extracts • Salem Dispensary</p>
+          <h1 class="page-title">Pure Formulations for Scalp, Skin &amp; Spirit.</h1>
+          <p class="hero-lead">
+            Hand-blended cold-pressed elixirs, slow-solar infusions, and raw bioactive botanicals crafted without synthetic emulsifiers, parabens, or artificial fragrance.
+          </p>
+        </div>
+
+        <div class="category-pills">
+          <button class="pill-btn active">All Formulations (14)</button>
+          <button class="pill-btn"><a href="haircare.html">Haircare</a> (5)</button>
+          <button class="pill-btn"><a href="soap.html">Soaps</a> (3)</button>
+          <button class="pill-btn">Wellness &amp; Teas (2)</button>
+          <button class="pill-btn highlight">Ritual Sets &amp; Bundles</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 02. STICKY FILTER BAR ================= -->
+    <section class="filter-bar">
+      <div class="container filter-content">
+        <div class="filter-controls">
+          <div class="select-group">
+            <label for="filterDosha">Dosha Affinity:</label>
+            <select id="filterDosha">
+              <option>All Doshas</option>
+              <option>Vata (Restorative)</option>
+              <option>Pitta (Cooling)</option>
+              <option>Kapha (Clarifying)</option>
+              <option>Tridoshic (Balanced)</option>
+            </select>
+          </div>
+
+          <div class="select-group">
+            <label for="filterBotanical">Key Botanical:</label>
+            <select id="filterBotanical">
+              <option>All Active Herbs</option>
+              <option>Neem (Azadirachta)</option>
+              <option>Aloe Vera (Barbadensis)</option>
+              <option>Bhringraj (Eclipta Alba)</option>
+              <option>Tulsi (Holy Basil)</option>
+              <option>Vetiver Root</option>
+              <option>Moringa Seed</option>
+            </select>
+          </div>
+
+          <div class="select-group">
+            <label for="filterProcess">Process:</label>
+            <select id="filterProcess">
+              <option>All Processes</option>
+              <option>Slow Solar Maceration</option>
+              <option>Cold-Pressed Lipids</option>
+              <option>6-Week Soap Cure</option>
+              <option>Alembic Hydro-Distillate</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="filter-summary">
+          <p class="count-text">Showing <strong>8 of 14</strong> Formulations</p>
+          <div class="select-group">
+            <label for="sortOrder">Sort:</label>
+            <select id="sortOrder">
+              <option>Featured Formulations</option>
+              <option>Price: Low to High</option>
+              <option>Price: High to Low</option>
+              <option>Highest Rated (4.8+)</option>
+              <option>New Harvest Batches</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 03. PRODUCT GRID ================= -->
+    <section class="products-section">
+      <div class="container">
+        <div class="products-grid">
+          
+          <!-- Product 1 -->
+          <article class="product-card">
+            <figure class="product-thumb">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8yo4nkMCiiE7e-Y7P8THCFK-zWSehTm0AYocvCo96W9-DHbkle6uH8Y4ZVv73twgQnn-LDg5N-eDTpHnkKeBVYFJXLnqp_y8HUEC918ToqgUhE3yz-A34_5-LhVlYBvd8FgH1iGRNYDJ1a_RWkX5CxgP8Nc_Fy1q8-055O171rNa4C1nByxeNX2pxiKFs8baLVyv-n98_JZ8RDRHm8Jlg8nz4bIIqkqZlnLqsF90v9prCj4SODSU" alt="Herbal Hair Oil">
+              <p class="badge-tag dark">Bestseller • Batch #94</p>
+            </figure>
+            <div class="product-meta">
+              <p class="dosha-tag">Calms Pitta &amp; Vata</p>
+              <p class="rating">★ 4.9 (1,420)</p>
+            </div>
+            <h2 class="product-title">Herbal Hair Oil — 100ml</h2>
+            <p class="product-desc">Macerated sesame &amp; coconut with 18 sacred wild herbs including Bhringraj, Brahmi &amp; organic Amla.</p>
+            <footer class="product-footer">
+              <p class="price">₹850</p>
+              <button class="btn-cart">+ Add to Bag</button>
+            </footer>
+          </article>
+
+          <!-- Product 2 -->
+          <article class="product-card">
+            <figure class="product-thumb">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjYdQ8gvmvOQdjFJFdc3izLGY0r9c6CKRsbafNNSttmnYo0V32lc-_U-_hwreoEXCcxUB6E0SgfH9tbZR5LoaVh2ICYEHf7zuvOjPkr9XBOpaVlXljpdJOCJ2FJy3pl6uHxcF3hIeVAgLgrtzRHFvlOPFC0jm0H9vI750igcBoknC9kXr1Tw6holSxrG77lYqxop1mxdLFe-wKCRgGUPmTMYVViyUlsJLJLF0oZHbjzVmIzKA9AAg" alt="Neem &amp; Tulsi Soap">
+              <p class="badge-tag">6-Week Cold Cure</p>
+            </figure>
+            <div class="product-meta">
+              <p class="dosha-tag">Purifies Kapha &amp; Pitta</p>
+              <p class="rating">★ 4.8 (890)</p>
+            </div>
+            <h2 class="product-title">Neem &amp; Tulsi Cold-Pressed Soap — 125g</h2>
+            <p class="product-desc">Saponified wild virgin coconut fat cured with fresh organic Azadirachta indica leaf liquor.</p>
+            <footer class="product-footer">
+              <p class="price">₹380</p>
+              <button class="btn-cart">+ Add to Bag</button>
+            </footer>
+          </article>
+
+          <!-- Product 3 -->
+          <article class="product-card">
+            <figure class="product-thumb">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuC99GaTOlnIUIwC53bpa_-ShF9r8oJZLwYg3g-n_13CpMDSph6zNuexRPUFgZ18yXckEOXGe4-wiBzkf_sHuoBp2L0c0Qt3y625-4S4J1XFp0KAqv9-sUM4gn2zr26uLCUbKQ8NYDuXPHGzqN5uLy_6K6mnhdBS2M-BKd_QVu_K_OF5HuyUP2_-kOyi3-XbVzXvUCQl759NmhmI3W1RyUhyyOOEMBLxWttFKqdG_Ud_TI8sHQLhYBE" alt="Pure Aloe Vera Gel">
+              <p class="badge-tag">99.2% Bio-Active</p>
+            </figure>
+            <div class="product-meta">
+              <p class="dosha-tag">Tridoshic Balance</p>
+              <p class="rating">★ 4.9 (612)</p>
+            </div>
+            <h2 class="product-title">Pure Aloe Vera Gel — 200ml</h2>
+            <p class="product-desc">Hand-filleted dawn-harvested aloe vera pulp to soothe barrier distress and replenish cellular moisture.</p>
+            <footer class="product-footer">
+              <p class="price">₹620</p>
+              <button class="btn-cart">+ Add to Bag</button>
+            </footer>
+          </article>
+
+          <!-- Product 4 -->
+          <article class="product-card">
+            <figure class="product-thumb">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1s2tdzMQTKJ5euWuAp584is6YzA9x2CHt2paw60opwNnjbnedPkpqXXztoYPlMQmdyTglfGuxMh6MLEg6UhT8-i-3f3r4RKuhtYIXoY0o4a0y9U04UDdf9s6sh67_Gykz3oXcJf9ATjriFYBzTWq4QnFDTQmuU28zVulf7shqTWLZ9pO6gBXiDMxdxdM0WT6QPSoHh-nYD-qWh3zPbFLeufpBHZBIYXExKj7ybgfEwZIVMryDw1E" alt="Herbal Nourishing Shampoo">
+              <p class="badge-tag">Gentle Botanical Cleanse</p>
+            </figure>
+            <div class="product-meta">
+              <p class="dosha-tag">Soothes Scalp</p>
+              <p class="rating">★ 4.7 (430)</p>
+            </div>
+            <h2 class="product-title">Herbal Nourishing Shampoo — 250ml</h2>
+            <p class="product-desc">Zero-sulfate gentle lather derived from organic Reetha, Shikakai, and cold-pressed vetiver root water.</p>
+            <footer class="product-footer">
+              <p class="price">₹740</p>
+              <button class="btn-cart">+ Add to Bag</button>
+            </footer>
+          </article>
+
+          <!-- Product 5 -->
+          <article class="product-card">
+            <figure class="product-thumb">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCftwjbPwjYcTsJ9IgNjXZu3tjg3FeVhTheVC6FmpOavK0_0swvIilkl8rGak16oDb2hFYGJih686uWVmLMuBXGplpRUPn4UJuYlCIpZbbj8BhiiGkcahnAqmsGX87rqziPzmmZJauGsPUdZMSB0MOxe0k4bTwy3ooIuQjq_MzB_ZZXBGLa6HpPcCIYT22ILifyFFYUIG61eJ-Gm_DZBhjdzyo0U9qfEOQTkFqVle-S55rO0n4C-FM" alt="Tulsi &amp; Vetiver Mist">
+              <p class="badge-tag">Hydro-Distilled</p>
+            </figure>
+            <div class="product-meta">
+              <p class="dosha-tag">Calms Pitta</p>
+              <p class="rating">★ 4.9 (315)</p>
+            </div>
+            <h2 class="product-title">Sun-Dried Tulsi &amp; Vetiver Mist — 120ml</h2>
+            <p class="product-desc">Pure copper-alembic distillate of sacred Krishna Tulsi and vetiver grass for instant midday skin restoration.</p>
+            <footer class="product-footer">
+              <p class="price">₹980</p>
+              <button class="btn-cart">+ Add to Bag</button>
+            </footer>
+          </article>
+
+          <!-- Product 6 -->
+          <article class="product-card">
+            <figure class="product-thumb">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNJm6jfCDeHKdtTywNBGKtO130bdYe2sdA-rCOI82UlJaTVI4F5mxudAobbaJErjwEcfzJ8oEcYT-dfercw0izkDcXVFDpB0vVEjicAAnoX7YELpMHKmTN8c-beT4Hg-IGhZaI0z98dJdbFHbve9ik9ssGsXM5W6eek9Xy9p5v5ArGhaMXPGGzz8goWkAiwKBkZkwTDNgv9jHHR3-NNa0M9XG36dDB-9OAsF4K8lj65C-VA66_XWs" alt="Triphala Masque">
+              <p class="badge-tag">Deep Clay Masque</p>
+            </figure>
+            <div class="product-meta">
+              <p class="dosha-tag">Grounds Vata</p>
+              <p class="rating">★ 4.8 (274)</p>
+            </div>
+            <h2 class="product-title">Triphala &amp; Brahmi Masque — 150g</h2>
+            <p class="product-desc">Sun-cured volcanic clay enriched with Triphala decoction and cold-pressed castor for scalp vitality.</p>
+            <footer class="product-footer">
+              <p class="price">₹1,120</p>
+              <button class="btn-cart">+ Add to Bag</button>
+            </footer>
+          </article>
+
+          <!-- Product 7 -->
+          <article class="product-card">
+            <figure class="product-thumb">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFTn0ifRDbqtFbIxs-fwcKBGvy6rlWYJPpS2kq6c2kKuIgjvfJJyr7ioCnU8OjjayuU-FaEsYyEFTPC0838hZDsN_DKlNAIRFL7e3rgZNZve7KlNRv7G0LBi5Jjng4o9IRXhzLgMoqVRNx5-_ELFkyr4EOpr5UXsisrl3XACA5AsKu_WYUA3jPjKqFEUDOSaTjCni7KBl_9VbuvggYh_RrvH581aNNP3tI3WErIAjERoZBrSM94p4" alt="Moringa Seed Oil">
+              <p class="badge-tag">Single-Origin Salem</p>
+            </figure>
+            <div class="product-meta">
+              <p class="dosha-tag">Tridoshic Nectar</p>
+              <p class="rating">★ 5.0 (188)</p>
+            </div>
+            <h2 class="product-title">Cold-Pressed Moringa Seed Oil — 50ml</h2>
+            <p class="product-desc">Ultra-pure botanical lipid brimming with behenic acid and micro-nutrients to restore epidermal glow.</p>
+            <footer class="product-footer">
+              <p class="price">₹1,250</p>
+              <button class="btn-cart">+ Add to Bag</button>
+            </footer>
+          </article>
+
+          <!-- Product 8 -->
+          <article class="product-card">
+            <figure class="product-thumb">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjTkTX2SdJY4GZ0EuIyDUaOOjRXTpDevwMOwoRt0kepCo9I79ceNAYW4ChYNRYZQ3DsjvkVulQVgEORLcisw82CSIZ0dQ-rBTFEN8jQtIXlDWHTTxbd7RA-jC9cHzirh14EgaNGghG2dyvYfCVm8YX5IQ2jkz-fIaeyU3LZtLHOa6xi22FLdtIq4v1GJiuB8w5Ibo-MZayWww_NgNva4fIK9kQQriTdzH5Vd-2z2z9ypggO0RqdjE" alt="The Complete Daily Reset Trio">
+              <p class="badge-tag gold">Curated Bundle (Save 15%)</p>
+            </figure>
+            <div class="product-meta">
+              <p class="dosha-tag">Complete Scalp &amp; Body</p>
+              <p class="rating">★ 4.9 (520)</p>
+            </div>
+            <h2 class="product-title">The Complete Daily Reset Trio</h2>
+            <p class="product-desc">Herbal Hair Oil (100ml), Nourishing Shampoo (250ml), and Neem Soap in handcrafted mulberry gift box.</p>
+            <footer class="product-footer">
+              <div class="price-group">
+                <strong class="price">₹1,675</strong>
+                <del class="old-price">₹1,970</del>
+              </div>
+              <button class="btn-cart">+ Add to Bag</button>
+            </footer>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 04. CONSULTATION PROMO BANNER ================= -->
+    <section class="consultation-section">
+      <div class="container consultation-grid">
+        <div class="consultation-info">
+          <p class="section-tag">Holistic Apothecary Guidance</p>
+          <h2>Uncertain which formulation matches your constitution?</h2>
+          <p class="body-lead">
+            Our resident herbalists at the Salem dispensary evaluate individual scalp conditions, sebum equilibrium, and Ayurvedic Prakriti through individualized, complimentary consultations.
+          </p>
+          <div class="btn-row">
+            <a href="#" class="btn-solid">Take the 3-Minute Dosha Assessment</a>
+            <a href="#" class="btn-outline">Book Herbalist Consultation</a>
+          </div>
+        </div>
+
+        <aside class="diagnostic-card">
+          <header class="diagnostic-header">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            <h3>Diagnostic Methodology</h3>
+          </header>
+          <p class="diagnostic-sub">We cross-examine three essential biological markers before recommending botanical oils and tinctures:</p>
+          <ul class="diagnostic-list">
+            <li><strong>Scalp Thermoregulation:</strong> Identifying excess Pitta heat causing follicle thinning.</li>
+            <li><strong>Lipid Barrier Integrity:</strong> Vata dryness vs. Kapha sebum stagnation.</li>
+            <li><strong>Solar Tolerance:</strong> Botanical sensitivities and natural UV recovery needs.</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ================= 05. DISPENSARY STANDARDS ================= -->
+    <section class="standards-section">
+      <div class="container">
+        <div class="standards-header">
+          <p class="section-tag">Purity Guarantees</p>
+          <h2>The PRONOV Dispensary Standard</h2>
+        </div>
+
+        <div class="standards-grid">
+          <article class="standard-box">
+            <div class="standard-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg>
+            </div>
+            <h3>100% Cold-Pressed</h3>
+            <p>Unrefined wood-pressed seed oils retaining whole enzymatic structures, fatty acids, and active phytosterols.</p>
+          </article>
+
+          <article class="standard-box">
+            <div class="standard-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 2v7.31"></path><path d="M14 9.3V1.99"></path><path d="M8.5 2h7"></path><path d="M14 9.3a6.5 6.5 0 1 1-4 0"></path><path d="M5.52 16h12.96"></path></svg>
+            </div>
+            <h3>Zero Synthetic Binders</h3>
+            <p>Completely free from dimethicones, phthalates, synthetic preservatives, and artificial fragrance compounds.</p>
+          </article>
+
+          <article class="standard-box">
+            <div class="standard-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            </div>
+            <h3>Salem Small Batches</h3>
+            <p>Compounded and macerated in limited batches of 150 units at our heritage botanical facility in Tamil Nadu.</p>
+          </article>
+
+          <article class="standard-box">
+            <div class="standard-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            </div>
+            <h3>Lab-Verified Integrity</h3>
+            <p>Every bottle arrives with a verified certificate of bio-potency and micro-organism screen for total consumer safety.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <h2>PRONOV</h2>
+          <p>Apothecary craftsmanship rooted in Ayurvedic botanical heritage and clinical purity. Formulated with rare, cold-pressed herbs to restore harmony, vigor, and luminous health to skin, hair, and spirit.</p>
+          <div class="social-links">
+            <a href="#">Instagram</a> • <a href="#">Facebook</a> • <a href="#">YouTube</a>
+          </div>
+        </div>
+
+        <div class="footer-nav">
+          <h3>Shop</h3>
+          <ul>
+            <li><a href="shop.html">Hair Care</a></li>
+            <li><a href="shop.html">Skin Care</a></li>
+            <li><a href="shop.html">Wellness</a></li>
+            <li><a href="shop.html">All Products</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav">
+          <h3>About</h3>
+          <ul>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="about.html">Ingredients</a></li>
+            <li><a href="#">Journal</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav">
+          <h3>Customer Care</h3>
+          <ul>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 PRONOV. All rights reserved.</p>
+        <p>Botanical Apothecary • Formulation Science</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= JAVASCRIPT ================= -->
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const primaryNav = document.getElementById('primary-nav');
+
+    if (menuToggle && primaryNav) {
+      menuToggle.addEventListener('click', function (e) {
+        e.stopPropagation();
+        primaryNav.classList.toggle('active');
+      });
+
+      document.addEventListener('click', function (e) {
+        if (!primaryNav.contains(e.target) && !menuToggle.contains(e.target)) {
+          primaryNav.classList.remove('active');
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>
