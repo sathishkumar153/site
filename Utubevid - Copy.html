@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Executive Growth</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ff0000;
+  background: #ffffff;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.container {
+  width: min(1120px, 92%);
+  margin: auto;
+}
+
+/* ================= HEADER ================= */
+
+header {
+  height: 72px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eef1f3;
+  background: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: Georgia, serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #005b96;
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #005b96;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.primary {
+  border: 0;
+  background: #005b96;
+  color: white;
+  border-radius: 5px;
+  padding: 11px 18px;
+  font-size: 11px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.primary:hover {
+  background: #004b7c;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #dce4e9;
+  border-radius: 50%;
+  background: white;
+  color: #005b96;
+}
+
+/* ================= HERO ================= */
+
+.hero {
+  background: linear-gradient(115deg, #f8fbfd, #f2f7fa);
+  padding: 68px 0 78px;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 55px;
+  align-items: center;
+}
+
+.eyebrow {
+  display: inline-block;
+  background: #e8f2f8;
+  color: #005b96;
+  font-size: 9px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  padding: 5px 9px;
+  border-radius: 2px;
+  margin-bottom: 13px;
+}
+
+h1 {
+  font-family: Georgia, serif;
+  font-size: 46px;
+  line-height: 1.02;
+  letter-spacing: -1.8px;
+  margin-bottom: 15px;
+}
+
+h1 span {
+  color: #005b96;
+}
+
+.hero-copy {
+  font-size: 14px;
+  color: #59656e;
+  max-width: 500px;
+}
+
+.note {
+  border-left: 2px solid #75acd0;
+  margin: 18px 0 20px;
+  padding-left: 12px;
+  font-size: 11px;
+  color: #69747c;
+}
+
+.cta-row {
+  display: flex;
+  gap: 9px;
+  flex-wrap: wrap;
+}
+
+.secondary {
+  border: 1px solid #d8e0e6;
+  background: white;
+  color: #37444e;
+  border-radius: 5px;
+  padding: 11px 18px;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.trust {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.avatars {
+  display: flex;
+}
+
+.avatar {
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-right: -7px;
+  background: linear-gradient(135deg, #d8e2e8, #8799a4);
+}
+
+.stars {
+  color: #e1a92d;
+  font-size: 11px;
+}
+
+.trust small {
+  font-size: 9px;
+  color: #69737a;
+}
+
+/* ================= IMAGE ================= */
+
+.visual {
+  position: relative;
+}
+
+.hero-photo {
+  width: 100%;
+  height: 310px;
+  object-fit: cover;
+  border-radius: 2px;
+  display: block;
+  box-shadow: 0 12px 30px rgba(28, 52, 70, .10);
+}
+
+.stat-card {
+  position: absolute;
+  left: -25px;
+  bottom: -25px;
+  background: white;
+  width: 155px;
+  padding: 13px 15px;
+  border-radius: 4px;
+  box-shadow: 0 10px 30px rgba(32, 54, 69, .15);
+}
+
+.stat-card small {
+  font-size: 8px;
+  color: #778087;
+  text-transform: uppercase;
+}
+
+.stat-card strong {
+  display: block;
+  font-size: 20px;
+  margin: 3px 0;
+}
+
+.stat-card strong span {
+  font-size: 9px;
+  color: #28a36b;
+}
+
+.chart {
+  height: 42px;
+}
+
+.chart svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* ================= RESULTS ================= */
+
+.results {
+  padding: 82px 0 75px;
+}
+
+.section-head {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 42px;
+}
+
+.section-head h2 {
+  font-family: Georgia, serif;
+  font-size: 25px;
+  margin-bottom: 8px;
+}
+
+.section-head p {
+  font-size: 11px;
+  color: #69747c;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.card {
+  min-height: 142px;
+  border: 1px solid #eef1f3;
+  border-left: 3px solid #005b96;
+  padding: 19px 17px;
+  box-shadow: 0 7px 20px rgba(40, 60, 75, .055);
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+  background: #eaf4fa;
+  color: #005b96;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+.card h3 {
+  font-family: Georgia, serif;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.card p {
+  font-size: 9.5px;
+  color: #6e777d;
+}
+
+.quote {
+  text-align: center;
+  margin-top: 30px;
+  color: #005b96;
+  font-family: Georgia, serif;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* ================= AUDIT ================= */
+
+.audit {
+  padding: 75px 0;
+  background: #f7fafc;
+}
+
+.audit-box {
+  background: white;
+  border: 1px solid #e3e9ed;
+  box-shadow: 0 14px 40px rgba(34, 55, 70, .07);
+  border-radius: 6px;
+  padding: 42px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 45px;
+  align-items: center;
+}
+
+.audit-box h2 {
+  font-family: Georgia, serif;
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+.audit-box p {
+  font-size: 12px;
+  color: #68737b;
+  margin-bottom: 18px;
+}
+
+.form {
+  display: grid;
+  gap: 11px;
+}
+
+.form input {
+  width: 100%;
+  padding: 12px 13px;
+  border: 1px solid #dbe3e8;
+  border-radius: 4px;
+  outline: none;
+  font-size: 12px;
+}
+
+.form input:focus {
+  border-color: #5b9ac0;
+}
+
+.form button {
+  width: 100%;
+  padding: 13px;
+  border: 0;
+  border-radius: 4px;
+  background: #005b96;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.message {
+  display: none;
+  font-size: 11px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.success {
+  background: #eaf8f0;
+  color: #14763f;
+}
+
+.error {
+  background: #fff0f0;
+  color: #a52b2b;
+}
+
+/* ================= FAQ ================= */
+
+.faq {
+  padding: 60px 0;
+  text-align: center;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+  background: #f3f5f7;
+  padding: 42px 0 20px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr .7fr 1.2fr;
+  gap: 40px;
+}
+
+footer h4 {
+  font-size: 10px;
+  margin-bottom: 12px;
+}
+
+footer p,
+footer a {
+  font-size: 9px;
+  color: #69747b;
+}
+
+.footer-links {
+  display: grid;
+  gap: 6px;
+}
+
+.email {
+  color: #005b96 !important;
+  font-weight: bold;
+}
+
+.copyright {
+  border-top: 1px solid #e2e6e9;
+  margin-top: 35px;
+  padding-top: 15px;
+  font-size: 8px;
+  color: #7c858b;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 850px) {
+
+  .nav-links {
+    display: none;
+  }
+
+  .hero-grid,
+  .audit-box {
+    grid-template-columns: 1fr;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  h1 {
+    font-size: 39px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+
+  header {
+    height: 62px;
+  }
+
+  .nav-actions .circle {
+    display: none;
+  }
+
+  .nav-actions .primary {
+    padding: 9px 12px;
+    font-size: 9px;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  .hero-photo {
+    height: 245px;
+  }
+
+  .stat-card {
+    left: 10px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .audit-box {
+    padding: 26px 20px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-row > * {
+    width: 100%;
+    text-align: center;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+<div class="container nav">
+
+<a href="#home" class="logo">
+<span>↗</span> Executive Growth
+</a>
+
+<nav class="nav-links">
+<a href="#home">Home</a>
+<a href="#results">Results</a>
+<a href="#audit">Lead Form</a>
+<a href="#audit">Audit</a>
+<a href="#faq">FAQ</a>
+</nav>
+
+<div class="nav-actions">
+<button class="primary" onclick="goToAudit()">
+Book My Audit
+</button>
+
+<button class="circle">
+●
+</button>
+</div>
+
+</div>
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+<div class="container hero-grid">
+
+<div>
+
+<div class="eyebrow">
+PERSONAL BRAND MASTERY
+</div>
+
+<h1>
+Turn Your LinkedIn From
+<span>Invisible</span>
+to Influential
+</h1>
+
+<p class="hero-copy">
+We don't just 'optimize profiles.'
+We build your personal brand from scratch —
+with strategy, content, and consistency
+that actually gets you seen.
+</p>
+
+<div class="note">
+From 0 to hero on LinkedIn — without confusion,
+guesswork, or wasting months figuring it out alone.
+</div>
+
+<div class="cta-row">
+
+<button class="primary" onclick="goToAudit()">
+Get Your Profile Audit →
+</button>
+
+<button class="secondary"
+onclick="document.getElementById('results').scrollIntoView()">
+Start Growing Today
+</button>
+
+</div>
+
+<div class="trust">
+
+<div class="avatars">
+<span class="avatar"></span>
+<span class="avatar"></span>
+<span class="avatar"></span>
+</div>
+
+<div>
+<div class="stars">★★★★★</div>
+<small>Trusted by top professionals</small>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="visual">
+
+<img
+class="hero-photo"
+src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1000&q=85"
+alt="Professional working on laptop">
+
+<div class="stat-card">
+
+<small>Profile views</small>
+
+<strong>
+342%
+<span>+84% this month</span>
+</strong>
+
+<div class="chart">
+
+<svg viewBox="0 0 150 42"
+preserveAspectRatio="none">
+
+<polyline
+points="2,36 18,29 30,31 43,21 55,24 67,15 80,18 93,9 105,13 118,6 130,10 148,2"
+fill="none"
+stroke="#0879bd"
+stroke-width="2">
+</polyline>
+
+</svg>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= RESULTS ================= -->
+
+<section class="results" id="results">
+
+<div class="container">
+
+<div class="section-head">
+
+<h2>
+Real Growth. Real Results.
+</h2>
+
+<p>
+We engineer authority and visibility using a
+data-backed system that consistently turns
+dormant profiles into lead-generation assets.
+</p>
+
+</div>
+
+
+<div class="cards">
+
+<article class="card">
+
+<div class="icon">♙</div>
+
+<h3>
+100+ Brands Built
+</h3>
+
+<p>
+Helped over 100 professionals build
+undeniable authority on LinkedIn from
+absolute zero.
+</p>
+
+</article>
+
+
+<article class="card">
+
+<div class="icon">▦</div>
+
+<h3>
+Inbound Lead Gen
+</h3>
+
+<p>
+Generated consistent inbound leads through
+strategic content tailored to high-value targets.
+</p>
+
+</article>
+
+
+<article class="card">
+
+<div class="icon">↗</div>
+
+<h3>
+Zero to Hero
+</h3>
+
+<p>
+Built commanding personal brands from
+absolute zero, bypassing months of trial
+and error.
+</p>
+
+</article>
+
+
+<article class="card">
+
+<div class="icon">◉</div>
+
+<h3>
+Massive Reach
+</h3>
+
+<p>
+Crafted content that consistently reaches
+thousands organically, maximizing visibility.
+</p>
+
+</article>
+
+
+<article class="card">
+
+<div class="icon">↔</div>
+
+<h3>
+High-Converting Profiles
+</h3>
+
+<p>
+We engineer profiles that act as landing pages,
+converting profile views into business opportunities.
+</p>
+
+</article>
+
+
+<article class="card">
+
+<div class="icon">10×</div>
+
+<h3>
+Content System
+</h3>
+
+<p>
+A repeatable publishing system designed to
+turn expertise into attention, trust and
+qualified conversations.
+</p>
+
+</article>
+
+</div>
+
+<div class="quote">
+"This isn't luck. It's a system that works."
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= AUDIT FORM ================= -->
+
+<section class="audit" id="audit">
+
+<div class="container">
+
+<div class="audit-box">
+
+<div>
+
+<div class="eyebrow">
+FREE PROFILE AUDIT
+</div>
+
+<h2>
+See What Your LinkedIn Is Missing.
+</h2>
+
+<p>
+Enter your details and get started.
+After submitting your details, you can
+continue to the secure ₹1 audit payment page.
+</p>
+
+<button class="primary" onclick="goToPayment()">
+Free Audit for ₹1 →
+</button>
+
+</div>
+
+
+<div>
+
+<form class="form" id="auditForm">
+
+<input
+id="name"
+type="text"
+placeholder="Name podu"
+required>
+
+<input
+id="email"
+type="email"
+placeholder="sathis@gmail.com"
+required>
+
+<input
+id="phone"
+type="tel"
+placeholder="2964548932"
+required>
+
+<button type="submit">
+Submit & Continue
+</button>
+
+<div
+id="success"
+class="message success">
+Details submitted successfully.
+Redirecting to payment...
+</div>
+
+<div
+id="error"
+class="message error">
+Something went wrong.
+Please try again.
+</div>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= FAQ ================= -->
+
+<section class="faq" id="faq">
+
+<div class="container">
+
+<div class="eyebrow">
+FAQ
+</div>
+
+<h2 style="font-family:Georgia,serif;margin-bottom:8px">
+Questions? Let's make it simple.
+</h2>
+
+<p style="font-size:11px;color:#69747c">
+Your audit starts with three details:
+Name, Email and Phone.
+No unnecessary fields.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div class="container">
+
+<div class="footer-grid">
+
+<div>
+
+<div class="logo">
+<span>↗</span> Executive Growth
+</div>
+
+<p style="margin-top:14px;max-width:220px">
+Building personal brands that stand out —
+and bring in opportunities.
+</p>
+
+</div>
+
+
+<div>
+
+<h4>Quick Links</h4>
+
+<div class="footer-links">
+
+<a href="#home">Home</a>
+<a href="#results">Services</a>
+<a href="#audit">Book Audit</a>
+<a href="#audit">Contact</a>
+
+</div>
+
+</div>
+
+
+<div>
+
+<h4>Contact</h4>
+
+<p>
+Have questions? Reach out anytime.
+</p>
+
+<a
+class="email"
+href="mailto:hello@executivegrowth.com">
+hello@executivegrowth.com
+</a>
+
+</div>
+
+</div>
+
+
+<div class="copyright">
+© 2026 All Rights Reserved.
+Built for those who are ready to be seen.
+</div>
+
+</div>
+
+</footer>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script>
+
+/*
+  GOOGLE APPS SCRIPT URL
+*/
+
+const SCRIPT_URL =
+"https://script.google.com/macros/s/AKfycbyrxtwKfYx23TRcAoPVMnmnH4NtNFqRu10BAs8TzyCcKoUXmw3FFnzB2_0ryublyAc/exec";
+
+
+/*
+  CASHFREE PAYMENT URL
+*/
+
+const PAYMENT_URL =
+"https://payments.cashfree.com/forms/getaudit";
+
+
+/*
+  Scroll to form
+*/
+
+function goToAudit() {
+
+  document
+    .getElementById("audit")
+    .scrollIntoView({
+      behavior: "smooth"
+    });
+
+}
+
+
+/*
+  Open payment page
+*/
+
+function goToPayment() {
+
+  window.location.href = PAYMENT_URL;
+
+}
+
+
+/*
+  SUCCESS MESSAGE
+*/
+
+function showSuccess() {
+
+  document.getElementById("success").style.display = "block";
+
+  document.getElementById("error").style.display = "none";
+
+}
+
+
+/*
+  ERROR MESSAGE
+*/
+
+function showError() {
+
+  document.getElementById("error").style.display = "block";
+
+  document.getElementById("success").style.display = "none";
+
+}
+
+
+/*
+  FORM SUBMISSION
+*/
+
+document
+.getElementById("auditForm")
+.addEventListener("submit", function(event) {
+
+  event.preventDefault();
+
+
+  const name =
+    document.getElementById("name").value.trim();
+
+
+  const email =
+    document.getElementById("email").value.trim();
+
+
+  const phone =
+    document.getElementById("phone").value.trim();
+
+
+  /*
+    Build URL exactly as required
+  */
+
+  const url =
+    SCRIPT_URL +
+    "?" +
+    new URLSearchParams({
+      name,
+      email,
+      phone
+    });
+
+
+  /*
+    Submit to Google Apps Script
+  */
+
+  fetch(url, {
+    method: "GET",
+    mode: "no-cors"
+  })
+
+  /*
+    Do NOT read the response.
+    Do NOT use response.json().
+    Do NOT check response.ok/status.
+  */
+
+  .then(() => showSuccess())
+
+  .catch(() => showError());
+
+});
+
+</script>
+
+</body>
+</html>

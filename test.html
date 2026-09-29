@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style >
+        .hero {
+    display: flex;
+    gap: 60px;
+
+    align-items: center;
+
+    max-width: 1200px;
+    margin: auto;
+
+    padding: 80px 30px;
+}
+.hero-gallery {
+    width: 55%;
+}
+
+.hero-gallery img {
+    width: 100%;
+    display: block;
+
+    border-radius: 20px;
+}
+.hero-content {
+    width: 45%;
+}
+.benefits {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 12px;
+
+    margin-top: 30px;
+}
+.benefit {
+    padding: 18px;
+
+    background: #f4f2ec;
+
+    border-radius: 10px;
+
+    display: flex;
+
+    gap: 10px;
+
+    align-items: center;
+}
+.hero-buttons {
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 25px;
+}
+.btn-primary {
+    background: #123f2d;
+
+    color: white;
+
+    padding: 15px 30px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+}
+.btn-secondary {
+    border: 1px solid #123f2d;
+
+    color: #123f2d;
+
+    padding: 15px 30px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+}
+.thumbnails {
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 15px;
+}
+.thumbnails img {
+    width: 90px;
+    height: 90px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+}
+.product-tabs {
+    display: flex;
+
+    gap: 25px;
+
+    border-bottom: 1px solid #ddd;
+
+    padding-bottom: 15px;
+}
+display: flex;
+.science-section {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 60px;
+
+    padding: 100px 0;
+}
+.product-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+}
+@media (max-width: 768px) {
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-gallery,
+    .hero-content {
+        width: 100%;
+    }
+
+
+    .science-section {
+        flex-direction: column;
+    }
+
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .benefits {
+        grid-template-columns: 1fr;
+    }
+
+
+    .product-tabs {
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+}
+    </style>
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+    <!-- FIGURE: MAIN HERO PRODUCT SECTION -->
+
+<section class="hero">
+
+    <!-- LEFT SIDE -->
+    <div class="hero-gallery">
+
+        <!-- FIGURE: MAIN PRODUCT IMAGE -->
+        <img src="Image.jpg" alt="Herbal Hair Oil">
+
+    </div>
+
+
+    <!-- RIGHT SIDE -->
+    <div class="hero-content">
+
+        <div class="product-category">
+            Products / Hair Care
+        </div>
+
+        <h1>Herbal Hair Oil</h1>
+
+        <p>
+            A time-honored infusion of 18 potent Ayurvedic herbs,
+            meticulously crafted to nourish the scalp.
+        </p>
+
+    </div>
+
+</section>
+<!-- FIGURE: PRODUCT BENEFITS -->
+
+<div class="benefits">
+
+    <div class="benefit">
+        <span>🌿</span>
+        <p>100% Natural</p>
+    </div>
+
+    <div class="benefit">
+        <span>🧪</span>
+        <p>Cold-Pressed</p>
+    </div>
+
+    <div class="benefit">
+        <span>🌱</span>
+        <p>Cruelty Free</p>
+    </div>
+
+    <div class="benefit">
+        <span>✓</span>
+        <p>Clinically Tested</p>
+    </div>
+
+</div>
+<!-- FIGURE: HERO BUTTONS -->
+
+<div class="hero-buttons">
+
+    <a href= "#" class="btn-primary">
+        Enquire Now →
+    </a>
+
+    <a href="#" class="btn-secondary">
+        Contact Us
+    </a>
+
+</div>
+
+
+<!-- FIGURE: PRODUCT IMAGE THUMBNAILS -->
+
+<div class="thumbnails">
+
+    <!-- FIGURE: THUMBNAIL 1 -->
+    <img src="images/thumb-1.jpg">
+
+    <!-- FIGURE: THUMBNAIL 2 -->
+    <img src="images/thumb-2.jpg">
+
+    <!-- FIGURE: THUMBNAIL 3 -->
+    <img src="images/thumb-3.jpg">
+
+    <!-- FIGURE: THUMBNAIL 4 -->
+    <img src="images/thumb-4.jpg">
+
+</div>
+    <!-- FIGURE: PRODUCT INFORMATION NAVIGATION -->
+
+<nav class="product-tabs">
+
+    <a href="#science">The Science & Nature</a>
+
+    <a href="#ingredients">Ingredients</a>
+
+    <a href="#ritual">Ritual of Use</a>
+
+    <a href="#faq">FAQ</a>
+
+</nav>
+<!-- FIGURE: THE SCIENCE AND NATURE SECTION -->
+
+<section class="science-section">
+
+    <div class="science-content">
+
+        <h2>
+            A Synergy of Tradition and Efficacy
+        </h2>
+
+        <p>
+            Our Herbal Hair Oil is not merely a blend;
+            it is a meticulously formulated therapeutic elixir.
+        </p>
+
+        <ul>
+
+            <li>Stimulates micro-circulation in the scalp.</li>
+
+            <li>Fortifies hair strands against mechanical stress.</li>
+
+            <li>Balances scalp microbiome to reduce flakiness.</li>
+
+        </ul>
+
+    </div>
+
+
+    <!-- FIGURE: HERBAL OIL SCIENCE IMAGE -->
+
+    <div class="science-image">
+
+        <img src="images/herbal-oil-science.jpg">
+
+    </div>
+
+</section>
+<!-- FIGURE: RELATED PRODUCTS SECTION -->
+
+<section class="related-products">
+
+    <div class="section-heading">
+
+        <p>COMPLETE THE RITUAL</p>
+
+        <h2>Explore Related Formulations</h2>
+
+    </div>
+
+
+    <div class="product-grid">
+
+        <!-- FIGURE: PRODUCT 1 - NEEM SOAP -->
+
+        <article class="product-card">
+
+            <img src="images/neem-soap.jpg">
+
+            <h3>Purifying Neem Soap</h3>
+
+            <p>Deep cleansing botanical bar</p>
+
+        </article>
+
+
+        <!-- FIGURE: PRODUCT 2 - ALOE VERA GEL -->
+
+        <article class="product-card">
+
+            <img src="images/aloe-vera.jpg">
+
+            <h3>Pure Aloe Vera Gel</h3>
+
+            <p>Multi-purpose soothing hydration</p>
+
+        </article>
+
+
+        <!-- FIGURE: PRODUCT 3 - HERBAL SHAMPOO -->
+
+        <article class="product-card">
+
+            <img src="images/herbal-shampoo.jpg">
+
+            <h3>Vitality Herbal Shampoo</h3>
+
+            <p>Sulfate-free root strengthening</p>
+
+        </article>
+
+    </div>
+
+</section>
+</body>
+</html>
